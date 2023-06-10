@@ -26,13 +26,13 @@ jobs:
 
         uses: actions/checkout@v2
 
-      - name: Set up JDK
+      - name: Set up JDK 8
 
-        uses: actions/setup-java@v2
+        uses: actions/setup-java@v1
 
         with:
 
-          java-version: '8'
+          java-version: '1.8'
 
       - name: Build the app
 
@@ -40,7 +40,7 @@ jobs:
 
           cd app
 
-          ./gradlew assembleDebug
+          ./gradlew assembleDebug --stacktrace
 
       - name: Create APK release
 
@@ -48,7 +48,7 @@ jobs:
 
         env:
 
-          GITHUB_TOKEN: ${{ secrets.MEMEHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
         with:
 
@@ -70,13 +70,13 @@ jobs:
 
         env:
 
-          GITHUB_TOKEN: ${{ secrets.MEMEHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
         with:
 
-          upload_url: ${{ github.event.release.upload_url }}
+          #upload_url: ${{ github.event.release.upload_url }}
 
-          asset_path: app/build/outputs/apk/debug/app-debug.apk
+          asset_path: app/build/outputs/apk/debug/memehub-debug.apk
 
           asset_name: memehub-debug.apk
 
