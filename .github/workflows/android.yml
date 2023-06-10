@@ -40,7 +40,7 @@ jobs:
 
           cd app
 
-          ./gradlew assembleDebug --stacktrace
+          run: bash ./gradlew assembleDebug --stacktrace
 
       - name: Create APK release
 
@@ -74,7 +74,7 @@ jobs:
 
         with:
 
-          #upload_url: ${{ github.event.release.upload_url }}
+          upload_url: ${{ github.event.release.upload_url }}
 
           asset_path: app/build/outputs/apk/debug/memehub-debug.apk
 
