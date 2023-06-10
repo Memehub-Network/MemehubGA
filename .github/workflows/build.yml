@@ -64,7 +64,7 @@ jobs:
 
         run: bash ./gradlew assembleDebug --stacktrace
 
-      - name: Upload APK
+      - name: Upload the APK 
 
         uses: actions/upload-artifact@v1
 
