@@ -7,8 +7,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Process;
 import android.util.Log;
-import com.memehub.network.net.*;
-
 
 public class SketchApplication extends Application {
 
