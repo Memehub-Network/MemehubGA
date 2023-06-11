@@ -54,6 +54,6 @@ public class SketchApplication extends Application {
         SketchLogger.startLogging();
         super.onCreate();
         
-        OkHttp.init(getApplicationContext());
+        //OkHttp.init(getApplicationContext());
     }
 }
