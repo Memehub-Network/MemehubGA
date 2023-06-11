@@ -1,14 +1,17 @@
-apply plugin: 'com.android.application'
+plugins {
+    id 'com.android.application'
+    id 'com.android.library'
+}
 
 android {
+    namespace 'com.memehub.network'
     compileSdk 33
     buildToolsVersion "33.0.1"
 
     defaultConfig {
-        applicationId "com.memehub.network"
-        namespace "com.memehub.network"
+        applicationId 'com.memehub.network'
         minSdkVersion 21
-        targetSdkVersion 31
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0 rc01"
     }
@@ -26,13 +29,13 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
     
     compileOptions {
-        coreLibraryDesugaringEnabled true
+        //coreLibraryDesugaringEnabled true
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
@@ -65,5 +68,5 @@ dependencies {
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
     
-    coreLibraryDesugaring "com.android.tools:desugar_jdk_libs_nio:2.0.3"
+    //coreLibraryDesugaring "com.android.tools:desugar_jdk_libs_nio:2.0.3"
 }
