@@ -38,13 +38,13 @@ import retrofit2.Response;
 @SuppressWarnings({"unused", "UnusedReturnValue"})
 public class MainActivity extends AppCompatActivity {
   
-  final Fragment fragment1 = new FeedFragment();
+  /*final Fragment fragment1 = new FeedFragment();
 	final Fragment fragment2 = new CometsFragment();
 	final Fragment fragment3 = new NotificationFragment();
 	final Fragment fragment4 = new ProfileFragment();
 	final FragmentManager fm = getSupportFragmentManager();
 	
-	Fragment active = fragment1;
+	Fragment active = fragment1;*/
 
   @Override
   public void onCreate(Bundle savedInstanceState){
