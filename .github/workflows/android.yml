@@ -1,8 +1,8 @@
 name: Android CI
 
 on:
-  workflow_dispatch:
-  ##push:
+  ##workflow_dispatch:
+  push:
   ##STOP AUTOMATIC DEPLOYMENT
     ##branches: [ "main" ]
   ##pull_request:
