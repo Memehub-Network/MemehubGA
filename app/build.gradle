@@ -4,8 +4,8 @@ plugins {
 
 android {
     namespace 'com.memehub.network'
-    compileSdk 33
-    buildToolsVersion "33.0.1"
+    compileSdk 31
+    //buildToolsVersion "33.0.1"
 
     defaultConfig {
         applicationId 'com.memehub.network'
