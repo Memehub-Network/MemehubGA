@@ -5,12 +5,12 @@ plugins {
 android {
     namespace 'com.memehub.network'
     compileSdk 31
-    //buildToolsVersion "33.0.1"
+    buildToolsVersion "33.0.1"
 
     defaultConfig {
         applicationId 'com.memehub.network'
         minSdkVersion 21
-        targetSdkVersion 28
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0 rc01"
     }
@@ -35,8 +35,8 @@ android {
     
     compileOptions {
         //coreLibraryDesugaringEnabled true
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 
 }
