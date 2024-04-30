@@ -139,7 +139,7 @@ public class BoilRoom extends MultiDexApplication {
 			return PendingIntent.getActivity(
 			BoilRoom.getContext(),
 			requestCode,
-			new Intent(BoilRoom.getContext(), DebugActivity.class),
+			new Intent(BoilRoom.getContext(), SplashActivity.class),
 			PendingIntent.FLAG_ONE_SHOT
 			);
 		}
