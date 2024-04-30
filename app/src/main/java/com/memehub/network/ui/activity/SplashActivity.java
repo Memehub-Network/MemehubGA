@@ -1,5 +1,8 @@
 package com.memehub.network.ui.activity;
 
+import com.memehub.network.R;
+import com.memehub.network.ui.base.BaseActivity;
+
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -12,11 +15,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.google.android.material.internal.EdgeToEdgeUtils;
+//import com.google.android.material.internal.EdgeToEdgeUtils;
 
 import java.util.List;
 
-public class SplashActivity extends AppCompatActivity {
+public class SplashActivity extends BaseActivity {
 	
 	private static int SLEEP = 2000;
 	private static final String TAG = "SplashActivity";
@@ -29,7 +32,7 @@ public class SplashActivity extends AppCompatActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		
-		EdgeToEdgeUtils.applyEdgeToEdge(getWindow(), true);
+		//EdgeToEdgeUtils.applyEdgeToEdge(getWindow(), true);
 		super.onCreate(savedInstanceState);
 		
 		if (savedInstanceState == null) {
