@@ -3,9 +3,6 @@ plugins {
 }
 
 android {
-    namespace 'com.memehub.network'
-    compileSdk 31
-    buildToolsVersion "33.0.1"
 
     defaultConfig {
         applicationId 'com.memehub.network'
@@ -14,6 +11,9 @@ android {
         versionCode 1
         versionName "1.0 rc01"
     }
+    
+    vectorDrawables.useSupportLibrary = true
+    multiDexEnabled true
 
     signingConfigs {
         release {
@@ -43,6 +43,25 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    
+    implementation 'androidx.profileinstaller:profileinstaller:1.3.0'
+    implementation 'androidx.arch.core:core-runtime:2.2.0'
+    //implementation 'androidx.core:core-ktx:1.10.1'
+    implementation 'androidx.core:core:1.10.1'
+    implementation 'androidx.lifecycle:lifecycle-runtime:2.6.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1'
+    implementation 'androidx.annotation:annotation-experimental:1.3.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-core:2.6.1'
+    implementation 'androidx.lifecycle:lifecycle-livedata:2.6.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel:2.6.1'
+    implementation 'androidx.lifecycle:lifecycle-process:2.6.1'
+    implementation 'androidx.savedstate:savedstate:1.2.1'
+    implementation 'androidx.activity:activity:1.8.0'
+    implementation 'androidx.emoji2:emoji2:1.2.0'
+    implementation 'androidx.appcompat:appcompat-resources:1.6.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.emoji2:emoji2-views-helper:1.2.0'
+           
     implementation 'androidx.annotation:annotation:1.6.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'androidx.appcompat:appcompat:1.4.0'
