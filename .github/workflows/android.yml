@@ -6,20 +6,30 @@ on:
       - main
 
 jobs:
-  buildMinApi26:
-    name: Build minApi26 debug APK
+  build:
+    name: Build App
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
+    - name: Checkout repository
+      uses: actions/checkout@v2
 
-      - name: Set up JDK 17
-        uses: actions/setup-java@v3
-        with:
-          java-version: 17
-          distribution: temurin
+    - name: Set up JDK 17
+      uses: actions/setup-java@v2
+      with:
+        java-version: 17
 
-      - name: Upload debug APK
-        uses: actions/upload-artifact@v3
-        with:
-          name: apk-minApi26-debug
-          path: app/build/minApi26/debug
+    - name: Build with Gradle
+      run: ./gradlew assembleDebug
+
+    - name: Create directory for artifacts
+      run: mkdir -p artifacts
+
+    - name: Copy APK to artifacts directory
+      run: cp app/build/outputs/apk/debug/app-debug.apk artifacts/
+
+    - name: Save artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: android-app
+        path: artifacts/
