@@ -4,6 +4,8 @@ plugins {
 
 android {
 
+    compileSdkVersion 31
+    
     defaultConfig {
         applicationId 'com.memehub.network'
         minSdkVersion 21
