@@ -1,11 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheem" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+    <style
+        name="SplashTheme"
+        parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+    <style
+        name="AppTheme"
+        parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">#FFFBFE</item>
+        <item name="android:statusBarColor">?attr/colorSurface</item>
+        <item name="android:navigationBarColor">?attr/colorSurface</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+
+        <item name="colorSurface">#FFFBFE</item>
+        <item name="iconTint">@color/iconTint</item>
+        
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.LargeComponent</item>
+
+    </style>
+
+<style name="ShapeAppearance.LargeComponent" parent="">
+    <item name="cornerFamily">rounded</item>
+    <item name="cornerSize">30dp</item> <!-- Adjust this value to your desired XL corner size -->
+</style>
+
+    <style name="LightText">
+        <item name="android:fontFamily">@font/en_light</item>
+    </style>
+
+    <style name="ImageStyle_Circle">
+        <item name="cornerSize">50%</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <style name="ImageStyle_Corners_Rounded">
+        <item name="cornerSize">24dp</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <style
+        name="ThemeOverlay_Memehub_BottomSheetDialog_Scrollable"
+        parent="ThemeOverlay.Material3.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Widget_Memehub_BottomSheet_Modal_Scrollable</item>
+    </style>
+
+    <style
+        name="Widget_Memehub_BottomSheet_Modal_Scrollable"
+        parent="Widget.Material3.BottomSheet.Modal">
+        <item name="paddingBottomSystemWindowInsets">false</item>
     </style>
 
 </resources>

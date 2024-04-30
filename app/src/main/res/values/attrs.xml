@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr
+        name="iconTint"
+        format="reference|color" />
+
+    <!-- CORNER ATTRIBUTES -->
+    <attr
+        name="shapeAppearanceCornerLarge"
+        format="reference" />
+    <attr
+        name="shapeAppearanceCornerMedium"
+        format="reference" />
+    <attr
+        name="shapeAppearanceCornerExtraSmall"
+        format="reference" />
+    <attr
+        name="shapeAppearanceCornerExtraLarge"
+        format="reference" />
+    <attr
+        name="shapeAppearanceCornerSmall"
+        format="reference" />
+
+    <attr
+        name="shapeCornerFamily"
+        format="reference|string" />
+
+</resources>
