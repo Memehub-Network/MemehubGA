@@ -17,7 +17,7 @@ public class BaseActivity extends AppCompatActivity {
 	@Override
 	protected void onCreate(@Nullable Bundle bundle) {
 		super.onCreate(bundle);
-		ThemeOverlayUtils.setThemeOverlay(R.id.theme_feature_corner_size, R.style.ThemeOverlay_ShapeCornerSize_ExtraLarge);
+		//ThemeOverlayUtils.setThemeOverlay(R.id.theme_feature_corner_size, R.style.ThemeOverlay_ShapeCornerSize_ExtraLarge);
 	}
 	
 	/** Returns {@code true} if preferences option is enabled. */
