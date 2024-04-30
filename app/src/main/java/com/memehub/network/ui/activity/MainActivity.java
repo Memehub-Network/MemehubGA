@@ -10,16 +10,15 @@ import android.widget.*;
 
 import com.google.android.material.transition.MaterialContainerTransform;
 
+import androidx.activity.EdgeToEdge;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends BaseActivity {
 	
-	private Fragment currentFragment;
-	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		
+		EdgeToEdge.enable(this);
 		super.onCreate(savedInstanceState);
 		
 		setContentView(R.layout.main);
