@@ -13,7 +13,7 @@
     android:name=".application.BoilRoom"
     android:requestLegacyExternalStorage="true"
     android:usesCleartextTraffic="true"
-    android:theme="@style/AppTheeme"
+    android:theme="@style/AppTheme"
     android:largeHeap="true"
     android:supportsRtl="true"
     android:forceDarkAllowed="false"
@@ -24,7 +24,6 @@
       android:exported="true"
       android:hardwareAccelerated="true"
       android:screenOrientation="portrait"
-      android:theme="@style/AppTheme"
       android:windowSoftInputMode="stateHidden" />
       
     <uses-library
