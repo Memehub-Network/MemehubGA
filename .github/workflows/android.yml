@@ -17,7 +17,15 @@ jobs:
     - name: Set up JDK 17
       uses: actions/setup-java@v2
       with:
-        java-version: 17
+        java-version: '17'
+        distribution: 'temurin'
+        server-id: 'github'
+        server-username: ${{ github.actor }}
+        server-password: ${{ secrets.GITHUB_TOKEN }}
+        architecture: 'x64'
+        check-latest: false
+        overwrite: true
+        job-status: success
 
     - name: Build with Gradle
       run: ./gradlew assembleDebug
