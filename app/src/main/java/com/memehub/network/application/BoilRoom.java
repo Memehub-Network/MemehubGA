@@ -1,7 +1,7 @@
 package com.memehub.network.application;
 
 import com.memehub.network.R;
-import com.memehub.network.DebugActivity;
+import com.memehub.network.ui.activity.SplashActivity;
 
 import android.app.Application;
 import android.app.AlarmManager;
@@ -129,7 +129,7 @@ public class BoilRoom extends MultiDexApplication {
 		
 		@Override
 		public void displayError(Throwable throwable, int requestCode) {
-			Intent restartIntent = new Intent(BoilRoom.getContext(), DebugActivity.class);
+			Intent restartIntent = new Intent(BoilRoom.getContext(), SplashActivity.class);
 			restartIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
 			restartIntent.putExtra("error", Log.getStackTraceString(throwable));
 		}
