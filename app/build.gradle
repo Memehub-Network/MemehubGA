@@ -12,10 +12,8 @@ android {
         targetSdkVersion 32
         versionCode 1
         versionName "1.0 rc01"
+        multiDexEnabled true
     }
-    
-    //vectorDrawables.useSupportLibrary = true
-    multiDexEnabled true
 
     signingConfigs {
         release {
