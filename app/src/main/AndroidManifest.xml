@@ -19,7 +19,7 @@
     android:forceDarkAllowed="false"
     android:appComponentFactory="androidx.core.app.CoreComponentFactory">
     <activity
-      android:name=".ui.MainActivity"
+      android:name=".ui.activity.MainActivity"
       android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
       android:hardwareAccelerated="true"
       android:screenOrientation="portrait"
@@ -31,7 +31,7 @@
       android:required="false" />
 
     <activity
-      android:name=".ui.SplashActivity"
+      android:name=".ui.activity.SplashActivity"
       android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
       android:hardwareAccelerated="true"
       android:screenOrientation="portrait"
